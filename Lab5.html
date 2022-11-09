@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <table style="width:50%">
+        <style>
+          .table,th, td {
+          position: relative;;
+          border: 1px black;
+          width: 100%;
+          }
+  
+          .subject{
+          background-color: green; 
+          }
+  
+          .score{
+           background-color: burlywood;
+          }
+  
+        </style>
+          <script>
+              function table200(){
+                  document.getElementById("linh").style.width="200px";
+              }
+              function table500(){
+                  document.getElementById("linh").style.width= "500px";
+              }
+
+
+              function changeSpace1(){
+                document.getElementById("linh").style.borderSpacing="1px";
+              }
+              function changeSpace15(){
+                document.getElementById("linh").style.borderSpacing= "10px";
+              }
+              function changeSpace20(){
+                document.getElementById("linh").style.borderSpacing= "20px";
+              }
+
+              function changeColor1(){
+                document.getElementById("linh").style.backgroundColor= "Green";
+              }
+              function changeColor2(){
+                document.getElementById("linh").style.backgroundColor= "Turquoise";
+              }
+              function changeColor3(){
+                document.getElementById("linh").style.backgroundColor= "Yellow";
+              } 
+              function changeColor4(){
+                document.getElementById("linh").style.backgroundColor= "Orange";
+              }              
+              function reset(){
+                document.getElementById("linh").style.backgroundColor="";
+                document.getElementById("linh").style.borderSpacing="2px";
+                document.getElementById("linh").style.width="200px";
+              }
+              
+
+
+            </script>
+  <br>
+      <table id="linh" width="200px" >
+          <tr style="background-color:cornflowerblue">
+            <th>Math</th>
+            <th>English</th>
+            <th>Programming</th>
+          </tr>
+          <tr >
+            <td>90</td>
+            <td>60</td>
+            <td>80</td>
+          </tr>
+          <tr>
+              <td>80</td>
+              <td>86</td>
+              <td>98</td>
+            </tr>
+        </table>
+  
+      
+      <br>
+      <p> Change the Width of the table</p>
+      <input type="button" onclick="table200()" value="200px">
+      <input type="button" onclick="table500()" value="500px">
+
+      <p> Change the Border Spacing</p>
+      <input type="button" onclick="changeSpace1()" value="1px">
+      <input type="button" onclick="changeSpace15()" value="10px">
+      <input type="button" onclick="changeSpace20()" value="20px">
+
+      <p> Change the color</p>
+      <input type="button" style="background-color: green;" onclick="changeColor1()" value="     ">
+      <input type="button" style="background-color: turquoise;" onclick="changeColor2()" value="     ">
+      <input type="button" style="background-color: yellow;" onclick="changeColor3()" value="     ">
+      <input type="button" style="background-color: orange;" onclick="changeColor4()" value="     ">
+
+      <input type="button" style="" onclick="reset()" value="Reset">
+
+</head>
+<body>
+    
+</body>
+</html>
